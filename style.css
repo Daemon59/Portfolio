@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+#navbar{
+    background-color:#1c2225;
+    width:100%;
+   display: flex;
+   justify-content: flex-end;
+   padding: 1em;
+   position: fixed;
+   top:0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    padding: 1em;
+    margin:2em;
+}
+
+nav li:hover{
+    background-color: white;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #697c94;
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#welcome-section{
+    background-color: #a5a0a4;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2em; 
+    text-align: center;
+    padding: 8em;
+    margin: 0;
+}
+
+#github{
+    width:40px;
+}
+
+.projects-section{
+    background-color: #d2987b;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    margin:4rem; 
+    align-items: center;
+    
+}
+
+#projects a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: 300px;
+   object-fit: cover;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project-title{
+   color: black;
+   text-align: center;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px;
+   background-color: #6f615d;
+   max-width: 430px;
+}
+
+.project-title:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    border-color:#cca88d;
+    transform: translatey(-30);
+    color: wheat;
+    transition: 3s;
+}
+
+#contact{
+    height: auto;
+   justify-content: flex-start;
+   padding: 10px;
+   margin-bottom: 10px;
+}
+
+.project-contact{
+    background-color: #222d44;
+    height: auto;
+    border: 1px solid black;
+}
+
+#email, #name, #message{
+    padding:1em;
+    width: 50%;
+    margin:5px;
+    border-radius: 5px;
+}
+
+#btn{
+    padding:20px 40px ;
+    border-radius: 5px;
+    margin:8px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #6f615d;
+    font-weight: bold;
+}
+
+#btn:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    border-color:#cca88d;
+    transform: translatey(-30);
+    color: wheat;
+    transition: 3s;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: translate(20px,20px);
+    transition: 2s;
+}
+
+#profile-link{
+    width: 30px;
+    margin: 2px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 785px) {
+    #welcome-section{
+        font-size: 1.5em;
+        padding-bottom: 4em;
+        line-height: 1.5em;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .grid{
+    width: 50%;
+    padding-left: 80px;
+    }
+    #projects{
+        height: auto;
+        padding: 20px;
+    }
+    #project-title{
+        width: 320px;
+    }
+    #navbar{
+        display: none;
+    }
+}
